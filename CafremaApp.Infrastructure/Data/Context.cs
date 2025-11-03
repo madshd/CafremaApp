@@ -8,7 +8,6 @@ public class Context : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // // Supabase-tabeller ligger ofte i 'public' skemaet
-        // modelBuilder.HasDefaultSchema("public");
+        modelBuilder.HasDefaultSchema("public");
     }
 }

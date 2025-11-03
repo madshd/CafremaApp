@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CafremaApp.Application\CafremaApp.Application.csproj" />
+    <ProjectReference Include="..\CafremaApp.Infrastructure\CafremaApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

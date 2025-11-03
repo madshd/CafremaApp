@@ -2,8 +2,6 @@ D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Infrastruct
 D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Infrastructure.dll
 D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Infrastructure.pdb
 D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Application.dll
-D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Domain.dll
-D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Domain.pdb
 D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Application.pdb
 D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\CafremaApp.Infrastructure.csproj.AssemblyReference.cache
 D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\CafremaApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,3 +13,8 @@ D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\CafremaApp.Infrastruct
 D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\refint\CafremaApp.Infrastructure.dll
 D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\CafremaApp.Infrastructure.pdb
 D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\ref\CafremaApp.Infrastructure.dll
+D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Infrastructure.runtimeconfig.json
+D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Core.dll
+D:\Dev\Cafrema\CafremaApp.Infrastructure\bin\Debug\net9.0\CafremaApp.Core.pdb
+D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\CafremaApp.Infrastructure.sourcelink.json
+D:\Dev\Cafrema\CafremaApp.Infrastructure\obj\Debug\net9.0\CafremaApp.Infrastructure.genruntimeconfig.cache
