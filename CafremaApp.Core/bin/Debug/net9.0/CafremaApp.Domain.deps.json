@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CafremaApp.Domain/1.0.0": {
+        "runtime": {
+          "CafremaApp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CafremaApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ffM3X5WWV/c=",
+  "success": true,
+  "projectFilePath": "D:\\Dev\\Cafrema\\CafremaApp.WebAPI\\CafremaApp.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\madsd\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "C:\\Users\\madsd\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\madsd\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\madsd\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
+  ],
+  "logs": []
+}

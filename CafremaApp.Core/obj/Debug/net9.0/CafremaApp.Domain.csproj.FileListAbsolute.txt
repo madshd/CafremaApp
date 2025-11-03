@@ -1,0 +1,11 @@
+D:\Dev\Cafrema\CafremaApp.Domain\bin\Debug\net9.0\CafremaApp.Domain.deps.json
+D:\Dev\Cafrema\CafremaApp.Domain\bin\Debug\net9.0\CafremaApp.Domain.dll
+D:\Dev\Cafrema\CafremaApp.Domain\bin\Debug\net9.0\CafremaApp.Domain.pdb
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\CafremaApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\CafremaApp.Domain.AssemblyInfoInputs.cache
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\CafremaApp.Domain.AssemblyInfo.cs
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\CafremaApp.Domain.csproj.CoreCompileInputs.cache
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\CafremaApp.Domain.dll
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\refint\CafremaApp.Domain.dll
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\CafremaApp.Domain.pdb
+D:\Dev\Cafrema\CafremaApp.Domain\obj\Debug\net9.0\ref\CafremaApp.Domain.dll
