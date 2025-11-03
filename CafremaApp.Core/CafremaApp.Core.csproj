@@ -7,9 +7,4 @@
     <RootNamespace>CafremaApp.Domain</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Enums\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
 </Project>
