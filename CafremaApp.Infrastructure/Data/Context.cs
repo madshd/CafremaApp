@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CafremaApp.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CafremaApp.Infrastructure.Data;
 
 public class Context : DbContext
 {
-    public Context(DbContextOptions options) : base(options) { }
+    protected Context() {}
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        // // Supabase-tabeller ligger ofte i 'public' skemaet
-        // modelBuilder.HasDefaultSchema("public");
-    }
+    public Context(DbContextOptions options) : base(options) { }
+    
+    // Add DbSet for entities here 
+    DbSet<Inventory> Inventories { get; set; }
 }
