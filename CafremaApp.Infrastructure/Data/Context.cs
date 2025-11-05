@@ -1,13 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CafremaApp.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CafremaApp.Infrastructure.Data;
 
 public class Context : DbContext
 {
-    public Context(DbContextOptions options) : base(options) { }
+    protected Context() {}
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.HasDefaultSchema("public");
-    }
+    public Context(DbContextOptions options) : base(options) { }
+    
+    // Add DbSet for entities here 
+    DbSet<Inventory> Inventories { get; set; }
 }

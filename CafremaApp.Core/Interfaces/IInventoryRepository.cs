@@ -1,4 +1,6 @@
-﻿namespace CafremaApp.Infrastructure.Repositories;
+﻿using CafremaApp.Domain.Entities;
+
+namespace CafremaApp.Domain.Interfaces;
 
 public interface IInventoryRepository
 {

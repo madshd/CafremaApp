@@ -5,34 +5,20 @@ using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Supabase client (Auth/Realtime)
-builder.Services.AddSupabaseInfrastructure(
-    builder.Configuration["Supabase:Url"],
-    builder.Configuration["Supabase:Key"]
-);
-
-// 2. EF Core DbContext
-builder.Services.AddDbContext<Context>(options =>
-    options.UseNpgsql(
-        builder.Configuration.GetConnectionString("DefaultConnection")
-    )
-);
-
-builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+// Add services to the container
+builder.Services.AddInfrastructure(builder.Configuration); // EF + Supabase + DI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure middleware
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();
