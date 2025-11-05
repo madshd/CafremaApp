@@ -6,9 +6,7 @@ public class Inventory
     public string Name { get; set; }
     public string Description { get; set; }
 
-    public Inventory()
-    {
-    }
+    public Inventory() { }
 
     public Inventory(int id, string name, string description)
     {

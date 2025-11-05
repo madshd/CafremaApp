@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CafremaApp.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cba94d4de1e2246b5d3e62c525879f16d68f383")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe786eaad46ead94d699ce0e7bc06df1f66e90c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CafremaApp.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CafremaApp.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,12 @@
+D:\Dev\Cafrema\CafremaApp.Core\bin\Debug\net9.0\CafremaApp.Core.deps.json
+D:\Dev\Cafrema\CafremaApp.Core\bin\Debug\net9.0\CafremaApp.Core.dll
+D:\Dev\Cafrema\CafremaApp.Core\bin\Debug\net9.0\CafremaApp.Core.pdb
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.AssemblyInfoInputs.cache
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.AssemblyInfo.cs
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.csproj.CoreCompileInputs.cache
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.sourcelink.json
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.dll
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\refint\CafremaApp.Core.dll
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.pdb
+D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\ref\CafremaApp.Core.dll
