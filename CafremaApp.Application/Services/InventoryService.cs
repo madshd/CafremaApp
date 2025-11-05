@@ -18,7 +18,7 @@ public class InventoryService :  IInventoryService
         return _repository.GetAllAsync();
     }
 
-    public Task<Inventory?> GetInventoryItem(int id)
+    public Task<Inventory?> GetInventoryItem(Guid id)
     {
         return _repository.GetByIdAsync(id);
     }

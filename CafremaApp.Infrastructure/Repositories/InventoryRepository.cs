@@ -16,7 +16,7 @@ public class InventoryRepository :  IGenericRepository<Inventory>
         return Task.FromResult(list);
     }
 
-    public Task<Inventory?> GetByIdAsync(int id)
+    public Task<Inventory?> GetByIdAsync(Guid id)
     {
         var item = _dbContext.Inventories.FirstOrDefault(x => x.Id == id);
         return Task.FromResult(item);
