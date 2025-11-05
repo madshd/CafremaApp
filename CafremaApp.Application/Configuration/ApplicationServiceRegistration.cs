@@ -5,16 +5,22 @@ using Microsoft.Extensions.DependencyInjection;
 namespace CafremaApp.Application.Configuration;
 
 public static class ApplicationServiceRegistration 
-{
-    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
-    {
-        // 1. Registrer Application Services (Implementering af Core Interfaces)
-        // Her knyttes IInventoryService (fra Core) til InventoryService (fra Application).
-        services.AddScoped<IInventoryService, InventoryService>();
-        
-        // Hvis du har andre App Services (f.eks. IOrderService), skal de også registreres her:
-        // services.AddScoped<IOrderService, OrderService>();
 
-        return services;
-    }
+{
+/// <summary>
+        /// Registers application services for dependency injection.
+        /// Scoped services have a lifetime that matches the duration of an HTTP request.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
+        /// <returns>The updated <see cref="IServiceCollection"/> instance.</returns>
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        {
+            // Register application services by linking interfaces to their implementations.
+            // Scoped services have a lifetime that matches the duration of an HTTP request.
+        
+            // Registers the IInventoryService interface to be resolved by the InventoryService implementation.
+            services.AddScoped<IInventoryService, InventoryService>();
+            
+            return services;
+        }
 }

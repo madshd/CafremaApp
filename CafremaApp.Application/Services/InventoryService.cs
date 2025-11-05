@@ -3,8 +3,7 @@ using CafremaApp.Core.Interfaces;
 
 namespace CafremaApp.Application.Services;
 
-// TODO Mangler en DTO Mapper
-public class InventoryService :  IInventoryService
+public class InventoryService : IInventoryService
 {
     private readonly IGenericRepository<Inventory> _repository;
 
@@ -13,29 +12,28 @@ public class InventoryService :  IInventoryService
         _repository = repository;
     }
 
-    public Task<List<Inventory>> GetAllAsync()
+    public async Task<List<Inventory>> GetAllInventory()
     {
-        return _repository.GetAllAsync();
+        return await _repository.GetAllAsync();
     }
 
-    public Task<Inventory?> GetInventoryItem(Guid id)
+    public async Task<Inventory?> GetInventoryItem(Guid id)
     {
-        return _repository.GetByIdAsync(id);
+        return await _repository.GetByIdAsync(id);
     }
 
-    public Task CreateInventoryItem(Inventory inventory)
+    public async Task CreateInventoryItem(Inventory inventory)
     {
-        return _repository.CreateAsync(inventory);
+        await _repository.CreateAsync(inventory);
     }
 
-    public Task UpdateInventoryItem(Inventory inventory)
+    public async Task<Inventory> UpdateInventoryItem(Inventory inventory)
     {
-        return _repository.UpdateAsync(inventory);
+        return await _repository.UpdateAsync(inventory);
     }
 
-    public Task DeleteInventoryItem(Inventory inventory)
+    public async Task<Inventory> DeleteInventoryItem(Inventory inventory)
     {
-        _repository.DeleteAsync(inventory);
-        return Task.CompletedTask;
+        return await _repository.DeleteAsync(inventory);
     }
 }

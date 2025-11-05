@@ -2,8 +2,13 @@
 
 public class CommentInfo
 {
-    private string Text { get; set; }
-    private DateTime LastEdited { get; set; }
+    public Guid Id { get; set; }
+    public string Text { get; set; }
+    public DateTime LastEdited { get; set; }
+
+    public CommentInfo()
+    {
+    }
 
     public CommentInfo(string text, DateTime lastEdited)
     {

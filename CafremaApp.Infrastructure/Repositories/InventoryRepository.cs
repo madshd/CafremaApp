@@ -2,6 +2,7 @@
 using CafremaApp.Core;
 using CafremaApp.Core.Interfaces;
 using CafremaApp.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CafremaApp.Infrastructure.Repositories;
 
@@ -10,36 +11,34 @@ public class InventoryRepository :  IGenericRepository<Inventory>
     private readonly Context _dbContext; 
     public InventoryRepository(Context dbContext) { _dbContext = dbContext; }
     
-    public Task<List<Inventory>> GetAllAsync()
+    public async Task<List<Inventory>> GetAllAsync()
     {
-        var list = _dbContext.Inventories.ToList();
-        return Task.FromResult(list);
+        return await _dbContext.Inventories.ToListAsync();
     }
 
-    public Task<Inventory?> GetByIdAsync(Guid id)
+    public async Task<Inventory?> GetByIdAsync(Guid id)
     {
-        var item = _dbContext.Inventories.FirstOrDefault(x => x.Id == id);
-        return Task.FromResult(item);
+        return await _dbContext.Inventories.FirstOrDefaultAsync(x => x.Id == id);
     }
 
-    public Task<Inventory> CreateAsync(Inventory entity)
+    public async Task<Inventory> CreateAsync(Inventory entity)
     {
         _dbContext.Inventories.Add(entity);
-        _dbContext.SaveChanges();
-        return Task.FromResult(entity);
+        await _dbContext.SaveChangesAsync();
+        return entity;
     }
 
-    public Task<Inventory> UpdateAsync(Inventory entity)
+    public async Task<Inventory> UpdateAsync(Inventory entity)
     {
         _dbContext.Inventories.Update(entity);
-        _dbContext.SaveChanges();
-        return Task.FromResult(entity);
+        await _dbContext.SaveChangesAsync();
+        return entity;
     }
 
-    public Task<Inventory> DeleteAsync(Inventory inventory)
+    public async Task<Inventory> DeleteAsync(Inventory inventory)
     {
         _dbContext.Inventories.Remove(inventory);
-        _dbContext.SaveChanges();
-        return Task.FromResult(inventory);
+        await _dbContext.SaveChangesAsync();
+        return inventory;
     }
 }
