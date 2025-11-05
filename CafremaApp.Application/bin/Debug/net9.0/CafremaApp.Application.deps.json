@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "CafremaApp.Application/1.0.0": {
         "dependencies": {
-          "CafremaApp.Domain": "1.0.0",
+          "CafremaApp.Core": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.10"
         },
         "runtime": {
@@ -23,9 +23,9 @@
           }
         }
       },
-      "CafremaApp.Domain/1.0.0": {
+      "CafremaApp.Core/1.0.0": {
         "runtime": {
-          "CafremaApp.Domain.dll": {
+          "CafremaApp.Core.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -46,7 +46,7 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.10",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512"
     },
-    "CafremaApp.Domain/1.0.0": {
+    "CafremaApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

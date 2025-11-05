@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CafremaApp.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f07b0490ee515106eeb6642a5d86c1d97ac1d240")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c433eb547705b0594a71dad3c5d65757a17d5eae")]
 [assembly: System.Reflection.AssemblyProductAttribute("CafremaApp.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CafremaApp.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
