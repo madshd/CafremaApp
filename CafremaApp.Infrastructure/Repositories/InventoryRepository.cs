@@ -1,5 +1,6 @@
-﻿using CafremaApp.Domain.Entities;
-using CafremaApp.Domain.Interfaces;
+﻿using CafremaApp.Core.Entities;
+using CafremaApp.Core;
+using CafremaApp.Core.Interfaces;
 
 namespace CafremaApp.Infrastructure.Repositories;
 

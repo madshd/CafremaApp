@@ -1,7 +1,6 @@
-using CafremaApp.Infrastructure;
-using CafremaApp.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
+using CafremaApp.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

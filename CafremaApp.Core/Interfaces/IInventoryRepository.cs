@@ -1,6 +1,6 @@
-﻿using CafremaApp.Domain.Entities;
+﻿using CafremaApp.Core.Entities;
 
-namespace CafremaApp.Domain.Interfaces;
+namespace CafremaApp.Core.Interfaces;
 
 public interface IInventoryRepository
 {
