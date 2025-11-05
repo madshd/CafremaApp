@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafremaApp.Domain.Entities
+namespace CafremaApp.Core.Entities
 {
     internal class Property
     {

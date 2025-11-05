@@ -1,0 +1,12 @@
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.deps.json
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.dll
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.pdb
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.AssemblyInfoInputs.cache
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.AssemblyInfo.cs
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.csproj.CoreCompileInputs.cache
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.sourcelink.json
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.dll
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/refint/CafremaApp.Core.dll
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.pdb
+/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Core/obj/Debug/net9.0/ref/CafremaApp.Core.dll

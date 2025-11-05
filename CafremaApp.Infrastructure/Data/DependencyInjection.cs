@@ -1,4 +1,4 @@
-﻿using CafremaApp.Domain.Interfaces;
+﻿using CafremaApp.Core.Interfaces;
 using CafremaApp.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
