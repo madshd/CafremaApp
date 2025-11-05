@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafremaApp.Domain.ValueObjects
+namespace CafremaApp.Core.Entities.Domain.ValueObjects
 {
     internal class ContactInfo
     {

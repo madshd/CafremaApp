@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CafremaApp.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace CafremaApp.Infrastructure.Data;
+namespace CafremaApp.Core.Entities.Infrastructure.Data;
 
 public class ContextFactory : IDesignTimeDbContextFactory<Context>
 {

@@ -101,3 +101,6 @@ D:\Dev\Cafrema\CafremaApp.WebAPI\bin\Debug\net9.0\CafremaApp.Core.pdb
 D:\Dev\Cafrema\CafremaApp.WebAPI\obj\Debug\net9.0\CafremaApp.WebAPI.sourcelink.json
 D:\Dev\Cafrema\CafremaApp.WebAPI\bin\Debug\net9.0\Npgsql.dll
 D:\Dev\Cafrema\CafremaApp.WebAPI\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Dev\Cafrema\CafremaApp.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Dev\Cafrema\CafremaApp.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Dev\Cafrema\CafremaApp.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

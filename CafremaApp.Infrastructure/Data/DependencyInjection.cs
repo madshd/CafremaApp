@@ -1,5 +1,5 @@
-﻿using CafremaApp.Domain.Interfaces;
-using CafremaApp.Infrastructure.Repositories;
+﻿using CafremaApp.Core.Entities.Infrastructure;
+using CafremaApp.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

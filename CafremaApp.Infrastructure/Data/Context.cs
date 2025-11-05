@@ -1,4 +1,4 @@
-﻿using CafremaApp.Domain.Entities;
+﻿using CafremaApp.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CafremaApp.Infrastructure.Data;

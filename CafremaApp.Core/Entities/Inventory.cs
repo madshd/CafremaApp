@@ -1,4 +1,4 @@
-﻿namespace CafremaApp.Domain.Entities;
+﻿namespace CafremaApp.Core.Entities;
 
 public class Inventory
 {
