@@ -1,35 +1,19 @@
-using CafremaApp.Core.Enums;
-using CafremaApp.Core.ValueObjects;
-
-namespace CafremaApp.Core.Entities;
+﻿namespace CafremaApp.Core.Entities;
 
 public class Inventory
 {
-    public Guid _guid = Guid.NewGuid();
-    public string Type { get; set; }
-    public DateOnly InstallationDate { get; set; }
-    public Condition Condition { get; set; }
-    public bool NeedsRepair { get; set; }
-    public CommentInfo Comment { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
 
-    public Inventory(string type, Condition condition)
+    public Inventory()
     {
-        Type = type;
-        Condition = condition;
-        Comment = new CommentInfo("", DateTime.Now);
-        NeedsRepair = false;
     }
-}
 
-public class Appliance : Inventory
-{
-    public string Manufacturer { get; set; }
-    public string Model { get; set; }
-
-    public Appliance(string type, Condition condition, 
-        string manufacturer, string model) : base(type, condition)
+    public Inventory(int id, string name, string description)
     {
-        Manufacturer = manufacturer;
-        Model = model;
+        Id = id;
+        Name = name;
+        Description = description;
     }
 }
