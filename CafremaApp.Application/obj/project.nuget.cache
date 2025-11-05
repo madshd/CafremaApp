@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ExN50Rj2jrU=",
+  "dgSpecHash": "m7/WHfdnCq4=",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Cafrema\\CafremaApp.Application\\CafremaApp.Application.csproj",
+  "projectFilePath": "/home/rasmus/Documents/GitHub/CafremaApp/CafremaApp.Application/CafremaApp.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\madsd\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512"
+    "/home/rasmus/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.10/microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512"
   ],
   "logs": []
 }
