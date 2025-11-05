@@ -5,5 +5,6 @@ public enum Condition
     New,
     Poor,
     Good,
-    Used
+    Used,
+    Unavailable
 }

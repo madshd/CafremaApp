@@ -9,8 +9,7 @@ public class Inventory
     private string Type { get; set; }
     private DateOnly InstallationDate { get; set; }
     private Condition Condition { get; set; }
-    
-    //private OtherCondition OC { get; set; }
+    private bool NeedsRepair { get; set; }
     private CommentInfo Comment { get; set; }
 
     public Inventory(string type, DateOnly installationDate, Condition condition, CommentInfo comment)
@@ -19,6 +18,7 @@ public class Inventory
         InstallationDate = installationDate;
         Condition = condition;
         Comment = comment;
+        NeedsRepair = false;
     }
 }
 
