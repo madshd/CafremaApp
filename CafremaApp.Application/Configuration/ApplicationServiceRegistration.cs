@@ -21,6 +21,7 @@ public static class ApplicationServiceRegistration
             // Registers the IInventoryService interface to be resolved by the InventoryService implementation.
             services.AddScoped<IInventoryService, InventoryService>();
             
+            
             return services;
         }
 }

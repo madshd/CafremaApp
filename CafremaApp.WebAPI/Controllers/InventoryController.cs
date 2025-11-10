@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CafremaApp.Application.Services;
+using Microsoft.AspNetCore.Mvc;
 using CafremaApp.Core.Entities;
-using CafremaApp.Core.Interfaces;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace CafremaApp.WebAPI.Controllers
 {
@@ -10,44 +8,31 @@ namespace CafremaApp.WebAPI.Controllers
     [ApiController]
     public class InventoryController : ControllerBase
     {
-        private readonly IInventoryService _service;
+        private readonly InventoryService _inventoryService;
 
-        public InventoryController(IInventoryService service) 
-        { 
-            _service = service; 
+        public InventoryController(InventoryService inventoryService)
+        {
+            _inventoryService = inventoryService;
         }
-        
+
         [HttpGet]
-        public async Task<ActionResult<List<Inventory>>> GetAllInventory()
+        public ActionResult GetAllInventory()
         {
-            var inventory = await _service.GetAllInventory();
-            return Ok(inventory);
+            return Ok(_inventoryService.GetAllInventory());
         }
 
-        [HttpGet("{id:guid}")]
-        public async Task<ActionResult<Inventory>> GetInventoryById(Guid id)
+        [HttpGet]
+        [Route("GetInventoryById")]
+        public ActionResult GetInventoryById(Guid id)
         {
-            var item = await _service.GetInventoryItem(id);
-            
-            if (item == null)
-            {
-                return NotFound($"Inventory item with ID {id} not found.");
-            }
-            
-            return Ok(item);
+            return Ok(_inventoryService.GetInventoryItem(id));
         }
 
-        [HttpPut("{id:guid}")]
-        public async Task<ActionResult> UpdateInventory(Guid id, [FromBody] Inventory inventory)
+        [HttpPut]
+        public ActionResult UpdateInventory(int id, string name, string description)
         { 
-            if (id != inventory.Id)
-            {
-                return BadRequest("ID mismatch in route and body.");
-            }
-
-            await _service.UpdateInventoryItem(inventory); 
-            
-            return NoContent();
+            //InventoryService.Put(id, name, description)
+            return Ok();
         }
 
     }
