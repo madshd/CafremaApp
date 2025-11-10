@@ -25,10 +25,26 @@ namespace CafremaApp.WebAPI.Controllers
 
         [HttpGet]
         [Route("GetInventoryById")]
-        public async  Task<ActionResult> GetInventoryById(Guid id)
+        public async  Task<IActionResult> GetInventoryById(Guid id)
         {
             var inventory = await _inventoryService.GetInventoryItem(id);
             return Ok(inventory);
+        }
+
+        [HttpDelete]
+        [Route("DeleteInventory")]
+        public async Task<IActionResult> DeleteInventory(Guid id)
+        {
+            
+            var inventory = await _inventoryService.GetInventoryItem(id);
+            return inventory == null ? NotFound() : Ok(await _inventoryService.DeleteInventoryItem(inventory));
+        }
+
+        [HttpPost]
+        [Route("CreateInventory")]
+        public async Task<IActionResult> CreateInventory()
+        {
+            return Ok();
         }
 
         [HttpPut]
