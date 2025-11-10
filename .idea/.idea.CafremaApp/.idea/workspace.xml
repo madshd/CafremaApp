@@ -10,99 +10,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31ecdc8-d7a0-420b-a9c9-491d68290056" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CafremaApp.Core/Entities/Inventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CafremaApp.Core/Interfaces/IInventoryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/Data/ContextFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/Data/DependencyInjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/Repositories/InventoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Application.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CafremaApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CafremaApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Domain.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/bin/Debug/net9.0/CafremaApp.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/CafremaApp.Application.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/ref/CafremaApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/ref/CafremaApp.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/refint/CafremaApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/Debug/net9.0/refint/CafremaApp.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/bin/Debug/net9.0/CafremaApp.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/CafremaApp.Core.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/ref/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/ref/CafremaApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/refint/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/Debug/net9.0/refint/CafremaApp.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Core/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/CafremaApp.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/CafremaApp.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/Data/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/Data/Context.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/Repositories/NewFile1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Domain.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Domain.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Infrastructure.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/bin/Debug/net9.0/CafremaApp.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/CafremaApp.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/CafremaApp.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/CafremaApp.Infrastructure.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/CafremaApp.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/CafremaApp.Infrastructure.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/ref/CafremaApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/ref/CafremaApp.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/refint/CafremaApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/Debug/net9.0/refint/CafremaApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/CafremaApp.WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/CafremaApp.WebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/CafremaApp.WebAPI.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/CafremaApp.WebAPI.csproj.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/Controllers/InventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/Controllers/InventoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Domain.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Domain.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/CafremaApp.WebAPI.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/bin/Debug/net9.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/CafremaApp.WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/CafremaApp.WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/CafremaApp.WebAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/CafremaApp.WebAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/CafremaApp.WebAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/CafremaApp.WebAPI.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/CafremaApp.WebAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/ref/CafremaApp.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/ref/CafremaApp.WebAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/refint/CafremaApp.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/refint/CafremaApp.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CafremaApp.WebAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +181,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762330641339</updated>
-      <workItem from="1762330642501" duration="4931000" />
+      <workItem from="1762330642501" duration="5503000" />
+      <workItem from="1762339002019" duration="3565000" />
+      <workItem from="1762761364004" duration="473000" />
     </task>
     <servers />
   </component>

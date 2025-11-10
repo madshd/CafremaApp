@@ -18,9 +18,9 @@ namespace CafremaApp.WebAPI.Controllers
 
         [HttpGet]
         [Route("GetInventoryById")]
-        public Inventory GetInventoryById(int id)
+        public ActionResult GetInventoryById(int id)
         {
-            return Inventories.Find(i => i.Id == id)!;
+            return Ok(Inventories.Find(i => i.Id == id));
         }
 
         [HttpPut]
