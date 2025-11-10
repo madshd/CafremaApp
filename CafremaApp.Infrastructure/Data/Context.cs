@@ -10,5 +10,5 @@ public class Context : DbContext
     public Context(DbContextOptions options) : base(options) { }
     
     // Add DbSet for entities here 
-    DbSet<Inventory> Inventories { get; set; }
+    public DbSet<Inventory> Inventories { get; set; }
 }

@@ -1,5 +1,8 @@
-﻿using CafremaApp.Core.Entities.Infrastructure;
+﻿using CafremaApp.Core.Entities;
+using CafremaApp.Core.Entities.Infrastructure;
+using CafremaApp.Core.Interfaces;
 using CafremaApp.Infrastructure.Data;
+using CafremaApp.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +20,8 @@ public static class DependencyInjection
         var url = configuration["Supabase:Url"];
         var key = configuration["Supabase:Key"];
         services.AddSingleton(new SupabaseClientWrapper(url!, key!));
+        
+        services.AddScoped<IGenericRepository<Inventory>, InventoryRepository>();
         
         return services;
     }

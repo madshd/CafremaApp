@@ -1,13 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using CafremaApp.Infrastructure.Data;
+using CafremaApp.Application.Configuration; // <-- DIT LØSENORD!
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddInfrastructure(builder.Configuration); // EF + Supabase + DI
+builder.Services.AddApplicationServices(); 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
 
 var app = builder.Build();
 
@@ -20,4 +27,5 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapControllers();
 app.Run();
