@@ -1,6 +1,9 @@
-﻿using CafremaApp.Application.Services;
+﻿using AutoMapper;
+using CafremaApp.Application.DTOs;
+using CafremaApp.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using CafremaApp.Core.Entities;
+using CafremaApp.Core.Enums;
 using CafremaApp.Core.Interfaces;
 
 namespace CafremaApp.WebAPI.Controllers
@@ -10,10 +13,12 @@ namespace CafremaApp.WebAPI.Controllers
     public class InventoryController : ControllerBase
     {
         private readonly IInventoryService _inventoryService;
+        private readonly IMapper _mapper;
 
-        public InventoryController(IInventoryService inventoryService)
+        public InventoryController(IInventoryService inventoryService, IMapper mapper)
         {
             _inventoryService = inventoryService;
+            _mapper = _mapper;
         }
 
         [HttpGet]
@@ -42,8 +47,10 @@ namespace CafremaApp.WebAPI.Controllers
 
         [HttpPost]
         [Route("CreateInventory")]
-        public async Task<IActionResult> CreateInventory()
+        public async Task<IActionResult> CreateInventory(string name)
         {
+            var inventory = new InventoryDTO(name, Condition.God);
+            await _inventoryService.CreateInventoryItem(inventory);
             return Ok();
         }
 

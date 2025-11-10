@@ -1,4 +1,6 @@
-﻿using CafremaApp.Core.Entities;
+﻿using AutoMapper;
+using CafremaApp.Application.DTOs;
+using CafremaApp.Core.Entities;
 using CafremaApp.Core.Interfaces;
 
 namespace CafremaApp.Application.Services;
@@ -6,34 +8,43 @@ namespace CafremaApp.Application.Services;
 public class InventoryService : IInventoryService
 {
     private readonly IGenericRepository<Inventory> _repository;
+    private readonly IMapper _mapper;
 
-    public InventoryService(IGenericRepository<Inventory> repository)
+    public InventoryService(IGenericRepository<Inventory> repository, IMapper mapper)
     {
         _repository = repository;
+        _mapper = mapper;
     }
 
-    public async Task<List<Inventory>> GetAllInventory()
+    public async Task<List<InventoryDTO>> GetAllInventory()
     {
-        return await _repository.GetAllAsync();
+        var list = await _repository.GetAllAsync();
+        var dtoList = _mapper.Map<List<InventoryDTO>>(list);
+        return dtoList;
     }
 
-    public async Task<Inventory?> GetInventoryItem(Guid id)
+    public async Task<InventoryDTO?> GetInventoryItem(Guid id)
     {
-        return await _repository.GetByIdAsync(id);
+        var entity = await _repository.GetByIdAsync(id);
+        return _mapper.Map<InventoryDTO>(entity);
     }
 
-    public async Task CreateInventoryItem(Inventory inventory)
+
+    public async Task CreateInventoryItem(InventoryDTO inventory)
     {
-        await _repository.CreateAsync(inventory);
+        await _repository.CreateAsync(_mapper.Map<Inventory>(inventory));
     }
 
-    public async Task<Inventory> UpdateInventoryItem(Inventory inventory)
+    public async Task<InventoryDTO> UpdateInventoryItem(InventoryDTO inventory)
     {
-        return await _repository.UpdateAsync(inventory);
+        var updatedEntity = await _repository.UpdateAsync(_mapper.Map<Inventory>(inventory));
+        return _mapper.Map<InventoryDTO>(updatedEntity);
     }
 
-    public async Task<Inventory> DeleteInventoryItem(Inventory inventory)
+    public async Task<InventoryDTO> DeleteInventoryItem(InventoryDTO inventory)
     {
-        return await _repository.DeleteAsync(inventory);
+        
+        var deletedEntity = await _repository.DeleteAsync(_mapper.Map<Inventory>(inventory));
+        return _mapper.Map<InventoryDTO>(deletedEntity);
     }
 }

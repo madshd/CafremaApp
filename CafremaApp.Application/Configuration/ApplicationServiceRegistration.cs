@@ -1,4 +1,5 @@
-﻿using CafremaApp.Application.Services;
+﻿using AutoMapper;
+using CafremaApp.Application.Services;
 using CafremaApp.Core.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
