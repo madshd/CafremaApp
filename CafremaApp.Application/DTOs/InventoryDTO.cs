@@ -11,7 +11,9 @@ public class InventoryDTO
     public DateOnly InstallationDate { get; set; }
     public Condition Condition { get; set; }
     public bool NeedsRepair { get; set; }
-    public CommentInfoDTO Comment { get; set; }
+    // public CommentInfoDTO Comment { get; set; }
+    
+    
 
     public InventoryDTO(string type, Condition condition)
     {

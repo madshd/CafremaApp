@@ -44,20 +44,22 @@ namespace CafremaApp.WebAPI.Controllers
             var inventory = await _inventoryService.GetInventoryItem(id);
             return inventory == null ? NotFound() : Ok(await _inventoryService.DeleteInventoryItem(inventory));
         }
-
+        
         [HttpPost]
         [Route("CreateInventory")]
-        public async Task<IActionResult> CreateInventory(string name)
+        public async Task<IActionResult> CreateInventory([FromBody] InventoryDTO inventory)
         {
-            var inventory = new InventoryDTO(name, Condition.God);
             await _inventoryService.CreateInventoryItem(inventory);
             return Ok();
         }
 
+        //TODO Den her skal vel have nogle flere arguments?
+        //TODO Kan jeg bare smide et nyt objekt ind med den samme iD og saa er alt godt????
         [HttpPut]
-        public ActionResult UpdateInventory(int id, string name, string description)
-        { 
-            //InventoryService.Put(id, name, description)
+        [Route("UpdateInventory")]
+        public async Task<IActionResult> UpdateInventory([FromBody] InventoryDTO inventory)
+        {
+            await _inventoryService.UpdateInventoryItem(inventory);
             return Ok();
         }
 
