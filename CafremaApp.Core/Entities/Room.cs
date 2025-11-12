@@ -4,8 +4,8 @@ namespace CafremaApp.Core.Entities;
 
 public class Room
 {
-    public Guid id { get; set; }
+    public Guid Id { get; set; }
     public string Title { get; set; }
-    public List<Inventory> inventory = new List<Inventory>();
-    public List<Appliance> appliances = new List<Appliance>();
+    public List<Inventory> Inventory = new List<Inventory>();
+    public List<Appliance> Appliances = new List<Appliance>();
 }

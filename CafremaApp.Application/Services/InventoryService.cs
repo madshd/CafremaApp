@@ -30,7 +30,7 @@ public class InventoryService : IInventoryService
     }
 
 
-    public async Task CreateInventoryItem(InventoryDTO inventory)
+    public async Task CreateInventoryItem(CreateInventoryDTO inventory)
     {
         await _repository.CreateAsync(_mapper.Map<Inventory>(inventory));
     }

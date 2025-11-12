@@ -9,9 +9,16 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
+        // Inventory
         CreateMap<Inventory, InventoryDTO>();
         CreateMap<InventoryDTO, Inventory>();
+        CreateMap<CreateInventoryDTO, Inventory>();
+
+        // CommentInfo
         CreateMap<CommentInfo, CommentInfoDTO>();
+        CreateMap<CommentInfoDTO, CommentInfo>();
+        CreateMap<CreateCommentInfoDTO, CommentInfo>()
+            .ForMember(dest => dest.Inventory, opt => opt.Ignore())
+            .ForMember(dest => dest.InventoryId, opt => opt.Ignore());
     }
-    
 }

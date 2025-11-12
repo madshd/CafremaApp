@@ -11,9 +11,10 @@ public class InventoryDTO
     public DateOnly InstallationDate { get; set; }
     public Condition Condition { get; set; }
     public bool NeedsRepair { get; set; }
-    // public CommentInfoDTO Comment { get; set; }
-    
-    
+    public CommentInfoDTO? CommentInfo { get; set; }
+    //public Guid? CommentInfoId { get; set; }
+
+    public InventoryDTO() { }
 
     public InventoryDTO(string type, Condition condition)
     {
@@ -30,12 +31,5 @@ public class ApplianceDTO : InventoryDTO
     public string Manufacturer { get; set; }
     
     public string Model { get; set; }
-    
-    public ApplianceDTO(string type, Condition condition, 
-        string manufacturer, string model) : base(type, condition)
-    {
-        Manufacturer = manufacturer;
-        Model = model;
-    }
 
 }
