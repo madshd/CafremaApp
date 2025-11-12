@@ -10,8 +10,8 @@ public class Inventory
     public DateOnly InstallationDate { get; set; }
     public Condition Condition { get; set; }
     public bool NeedsRepair { get; set; }
-    public CommentInfo Comment { get; set; }
-
+    public CommentInfo? CommentInfo { get; set; }
+    
     public Inventory(string type, Condition condition)
     {
         Type = type;

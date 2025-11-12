@@ -47,7 +47,7 @@ namespace CafremaApp.WebAPI.Controllers
         
         [HttpPost]
         [Route("CreateInventory")]
-        public async Task<IActionResult> CreateInventory([FromBody] InventoryDTO inventory)
+        public async Task<IActionResult> CreateInventory([FromBody] CreateInventoryDTO inventory)
         {
             await _inventoryService.CreateInventoryItem(inventory);
             return Ok();

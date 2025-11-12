@@ -13,8 +13,9 @@ public class InventoryRepository :  IGenericRepository<Inventory>
     
     public async Task<List<Inventory>> GetAllAsync()
     {
-        return await _dbContext.Inventories.ToListAsync();
-    }
+        return await _dbContext.Inventories
+            .Include(i => i.CommentInfo)
+            .ToListAsync();    }
 
     public async Task<Inventory?> GetByIdAsync(Guid id)
     {

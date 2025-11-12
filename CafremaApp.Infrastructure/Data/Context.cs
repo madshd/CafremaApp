@@ -11,4 +11,5 @@ public class Context : DbContext
     
     // Add DbSet for entities here 
     public DbSet<Inventory> Inventories { get; set; }
+    public DbSet<Appliance> Appliances { get; set; }
 }

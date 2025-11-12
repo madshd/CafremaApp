@@ -7,7 +7,7 @@ public class CommentInfo
     public Guid Id { get; set; }
     public string Text { get; set; }
     public DateTime LastEdited { get; set; }
-    public Inventory inventory;
+    public Inventory Inventory { get; set; }
     public Guid InventoryId { get; set; }
 
     public CommentInfo()
