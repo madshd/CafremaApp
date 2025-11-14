@@ -1,5 +1,6 @@
 using AutoMapper;
 using CafremaApp.Application.DTOs;
+using CafremaApp.Application.DTOs.Appliance;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.ValueObjects;
 
@@ -13,6 +14,11 @@ public class MappingProfile : Profile
         CreateMap<Inventory, InventoryDTO>();
         CreateMap<InventoryDTO, Inventory>();
         CreateMap<CreateInventoryDTO, Inventory>();
+        
+        //Appliance
+        CreateMap<Appliance, ApplianceDTO>();
+        CreateMap<ApplianceDTO, Appliance>();
+        CreateMap<CreateApplianceDTO, Appliance>();
 
         // CommentInfo
         CreateMap<CommentInfo, CommentInfoDTO>();

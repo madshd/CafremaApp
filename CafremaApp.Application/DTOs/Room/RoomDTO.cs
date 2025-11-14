@@ -1,4 +1,6 @@
-namespace CafremaApp.Application.DTOs.Room;
+
+using CafremaApp.Application.DTOs;
+using CafremaApp.Application.DTOs.Appliance;
 
 public class RoomDTO
 {

@@ -24,12 +24,3 @@ public class InventoryDTO
     }
     
 }
-
-public class ApplianceDTO : InventoryDTO
-{
-    
-    public string Manufacturer { get; set; }
-    
-    public string Model { get; set; }
-
-}
