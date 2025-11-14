@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafremaApp.WebAPI", "Cafrem
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafrema.Tests", "Cafrema.Tests\Cafrema.Tests.csproj", "{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,18 @@ Global
 		{769BF2DA-662C-4150-A778-2F92D296A3DA}.Release|x64.Build.0 = Release|Any CPU
 		{769BF2DA-662C-4150-A778-2F92D296A3DA}.Release|x86.ActiveCfg = Release|Any CPU
 		{769BF2DA-662C-4150-A778-2F92D296A3DA}.Release|x86.Build.0 = Release|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Debug|x64.Build.0 = Debug|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Debug|x86.Build.0 = Debug|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Release|x64.ActiveCfg = Release|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Release|x64.Build.0 = Release|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Release|x86.ActiveCfg = Release|Any CPU
+		{4825A1C1-4938-4777-8335-5FFD4BE9A7B1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
