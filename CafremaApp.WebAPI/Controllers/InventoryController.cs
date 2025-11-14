@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
+using Azure;
 using CafremaApp.Application.DTOs;
 using CafremaApp.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.Enums;
 using CafremaApp.Core.Interfaces;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace CafremaApp.WebAPI.Controllers
 {
@@ -53,8 +55,26 @@ namespace CafremaApp.WebAPI.Controllers
             return Ok();
         }
 
-        //TODO Den her skal vel have nogle flere arguments?
-        //TODO Kan jeg bare smide et nyt objekt ind med den samme iD og saa er alt godt????
+        [HttpPatch("{Id}")]
+        public async Task<IActionResult> PatchInventory(Guid Id, [FromBody] JsonPatchDocument<InventoryDTO> patchDoc)
+        {
+            if (patchDoc == null) return BadRequest();
+
+            var inventory = await _inventoryService.GetInventoryItem(Id);
+            
+            if (inventory == null) return NotFound();
+            
+            patchDoc.ApplyTo(inventory, ModelState);
+
+            //Check om patching lykkedes, altso om info passer med model
+            if (!TryValidateModel(inventory)) return BadRequest(ModelState);
+            
+            //Updater DB
+            await _inventoryService.UpdateInventoryItem(inventory);
+            return Ok();
+        }
+        
+
         [HttpPut]
         [Route("UpdateInventory")]
         public async Task<IActionResult> UpdateInventory([FromBody] InventoryDTO inventory)
