@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CafremaApp.Application.Interfaces;
 using CafremaApp.Application.Services;
 using CafremaApp.Core.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,7 +23,7 @@ public static class ApplicationServiceRegistration
             // Registers the IInventoryService interface to be resolved by the InventoryService implementation.
             services.AddScoped<IInventoryService, InventoryService>();
             services.AddScoped<IApplianceService, ApplianceService>();
-            
+            services.AddScoped<IRoomService, RoomService>();
             
             return services;
         }

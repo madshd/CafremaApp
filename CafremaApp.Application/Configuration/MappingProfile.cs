@@ -1,6 +1,7 @@
 using AutoMapper;
 using CafremaApp.Application.DTOs;
 using CafremaApp.Application.DTOs.Appliance;
+using CafremaApp.Application.DTOs.Room;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.ValueObjects;
 
@@ -26,5 +27,9 @@ public class MappingProfile : Profile
         CreateMap<CreateCommentInfoDTO, CommentInfo>()
             .ForMember(dest => dest.Inventory, opt => opt.Ignore())
             .ForMember(dest => dest.InventoryId, opt => opt.Ignore());
+        
+        // Room
+        CreateMap<Room, RoomDTO>();
+        CreateMap<CreateRoomDTO, Room>();
     }
 }

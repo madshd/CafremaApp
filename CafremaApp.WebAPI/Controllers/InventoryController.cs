@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.Enums;
 using CafremaApp.Core.Interfaces;
-using Microsoft.AspNetCore.JsonPatch;
 
 namespace CafremaApp.WebAPI.Controllers
 {
@@ -37,14 +36,17 @@ namespace CafremaApp.WebAPI.Controllers
             var inventory = await _inventoryService.GetInventoryItem(id);
             return Ok(inventory);
         }
-
+        
         [HttpDelete]
         [Route("DeleteInventory")]
         public async Task<IActionResult> DeleteInventory(Guid id)
         {
-            
-            var inventory = await _inventoryService.GetInventoryItem(id);
-            return inventory == null ? NotFound() : Ok(await _inventoryService.DeleteInventoryItem(inventory));
+            var deleted = await _inventoryService.DeleteInventoryItem(id);
+
+            if (deleted == null)
+                return NotFound();
+
+            return Ok(deleted);
         }
         
         [HttpPost]
@@ -55,24 +57,24 @@ namespace CafremaApp.WebAPI.Controllers
             return Ok();
         }
 
-        [HttpPatch("{Id}")]
-        public async Task<IActionResult> PatchInventory(Guid Id, [FromBody] JsonPatchDocument<InventoryDTO> patchDoc)
-        {
-            if (patchDoc == null) return BadRequest();
-
-            var inventory = await _inventoryService.GetInventoryItem(Id);
-            
-            if (inventory == null) return NotFound();
-            
-            patchDoc.ApplyTo(inventory, ModelState);
-
-            //Check om patching lykkedes, altso om info passer med model
-            if (!TryValidateModel(inventory)) return BadRequest(ModelState);
-            
-            //Updater DB
-            await _inventoryService.UpdateInventoryItem(inventory);
-            return Ok();
-        }
+        // [HttpPatch("{Id}")]
+        // public async Task<IActionResult> PatchInventory(Guid Id, [FromBody] JsonPatchDocument<InventoryDTO> patchDoc)
+        // {
+        //     if (patchDoc == null) return BadRequest();
+        //
+        //     var inventory = await _inventoryService.GetInventoryItem(Id);
+        //     
+        //     if (inventory == null) return NotFound();
+        //     
+        //     patchDoc.ApplyTo(inventory, ModelState);
+        //
+        //     //Check om patching lykkedes, altso om info passer med model
+        //     if (!TryValidateModel(inventory)) return BadRequest(ModelState);
+        //     
+        //     //Updater DB
+        //     await _inventoryService.UpdateInventoryItem(inventory);
+        //     return Ok();
+        // }
         
 
         [HttpPut]

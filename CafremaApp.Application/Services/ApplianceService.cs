@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CafremaApp.Application.DTOs;
 using CafremaApp.Application.DTOs.Appliance;
+using CafremaApp.Application.Interfaces;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.Interfaces;
 
@@ -8,10 +9,10 @@ namespace CafremaApp.Application.Services;
 
 public class ApplianceService : IApplianceService
 {
-    private readonly IGenericRepository<Inventory> _repository;
+    private readonly IGenericRepository<Appliance> _repository;
     private readonly IMapper _mapper;
 
-    public ApplianceService(IGenericRepository<Inventory> repository, IMapper mapper)
+    public ApplianceService(IGenericRepository<Appliance> repository, IMapper mapper)
     {
         _repository = repository;
         _mapper = mapper;
@@ -42,10 +43,13 @@ public class ApplianceService : IApplianceService
         return _mapper.Map<ApplianceDTO>(updatedEntity);
     }
 
-    public async Task<ApplianceDTO> DeleteApplianceItem(ApplianceDTO appliance)
+    public async Task<ApplianceDTO> DeleteApplianceItem(Guid id)
     {
-        
-        var deletedEntity = await _repository.DeleteAsync(_mapper.Map<Appliance>(appliance));
+        var deletedEntity = await _repository.DeleteAsync(id);
+
+        if (deletedEntity == null)
+            return null;
+
         return _mapper.Map<ApplianceDTO>(deletedEntity);
     }
 }

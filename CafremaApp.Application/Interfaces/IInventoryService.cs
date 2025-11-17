@@ -10,5 +10,5 @@ public interface IInventoryService
     Task<InventoryDTO?> GetInventoryItem(Guid id);
     Task CreateInventoryItem(CreateInventoryDTO inventory);
     Task<InventoryDTO>  UpdateInventoryItem(InventoryDTO inventory);
-    Task<InventoryDTO>  DeleteInventoryItem(InventoryDTO inventory);
+    Task<InventoryDTO?>  DeleteInventoryItem(Guid id);
 }

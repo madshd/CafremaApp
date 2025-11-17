@@ -1,6 +1,6 @@
 using CafremaApp.Application.DTOs.Room;
 
-namespace CafremaApp.Core.Interfaces;
+namespace CafremaApp.Application.Interfaces;
 
 public interface IRoomService
 {
@@ -8,5 +8,5 @@ public interface IRoomService
     Task<RoomDTO?> GetRoom(Guid id);
     Task CreateRoom(CreateRoomDTO room);
     Task<RoomDTO>  UpdateRoom(RoomDTO room);
-    Task<RoomDTO>  DeleteRoom(RoomDTO room);
+    Task<RoomDTO?>  DeleteRoom(Guid id);
 }
