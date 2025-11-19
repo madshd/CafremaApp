@@ -14,6 +14,15 @@ public class Inventory
     
     public Inventory(string type, Condition condition)
     {
+        if (type == null)
+        {
+            throw new ArgumentNullException(nameof(type));
+        }
+        if (string.IsNullOrWhiteSpace(type))
+        {
+            throw new ArgumentException(
+                "Type must not be empty.", nameof(type));
+        }
         Type = type;
         Condition = condition;
         NeedsRepair = false;
@@ -28,6 +37,28 @@ public class Appliance : Inventory
     public Appliance(string type, Condition condition, 
         string manufacturer, string model) : base(type, condition)
     {
+        if (manufacturer == null)
+        {
+            throw new ArgumentNullException(nameof(manufacturer));
+        }
+        
+        if (string.IsNullOrWhiteSpace(manufacturer))
+        {
+            throw new ArgumentException(
+                "Manufacturer must not be empty.", nameof(manufacturer));
+        }
+
+        if (model == null)
+        {
+            throw new ArgumentNullException(nameof(model));
+        }
+        
+        if (string.IsNullOrWhiteSpace(model))
+        {
+            throw new ArgumentException(
+                "Model must not be empty.", nameof(model));
+        }
+        
         Manufacturer = manufacturer;
         Model = model;
     }

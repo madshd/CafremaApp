@@ -1,3 +1,8 @@
 /.vs
 /.idea
 CafremaApp.WebAPI/obj/rider.project.restore.info
+CafremaApp.Application/obj/
+CafremaApp.Core/obj/
+CafremaApp.Infrastructure/obj/
+CafremaApp.WebAPI/obj/
+CafremaApp.Tests/obj/

@@ -10,3 +10,15 @@ D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.dll
 D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\refint\CafremaApp.Core.dll
 D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.pdb
 D:\Dev\Cafrema\CafremaApp.Core\obj\Debug\net9.0\ref\CafremaApp.Core.dll
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\bin\Debug\net9.0\CafremaApp.Core.deps.json
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\bin\Debug\net9.0\CafremaApp.Core.dll
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\bin\Debug\net9.0\CafremaApp.Core.pdb
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.AssemblyInfoInputs.cache
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.AssemblyInfo.cs
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.sourcelink.json
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.dll
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\refint\CafremaApp.Core.dll
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\CafremaApp.Core.pdb
+C:\Users\niels\Documents\GitHub\CafremaApp\CafremaApp.Core\obj\Debug\net9.0\ref\CafremaApp.Core.dll
