@@ -4,6 +4,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=075e5391_002D3b0a_002D4a33_002D8183_002D633f8b02f4bd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Appliance_Properties_CanBeSetAndGot #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4825A1C1-4938-4777-8335-5FFD4BE9A7B1::net9.0::CafremaApp.Tests.InventoryTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4825A1C1-4938-4777-8335-5FFD4BE9A7B1::net9.0::CafremaApp.Tests.RoomTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0b2cf030_002D23c5_002D42f7_002Db21b_002D8dc375108a63/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Appliance_Properties_CanBeSetAndGot" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
