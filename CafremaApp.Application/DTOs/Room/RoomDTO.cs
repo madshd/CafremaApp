@@ -9,3 +9,4 @@ public class RoomDTO
     public List<InventoryDTO> inventory = new List<InventoryDTO>();
     public List<ApplianceDTO> appliances = new List<ApplianceDTO>();
 }
+

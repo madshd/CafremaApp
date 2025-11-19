@@ -14,6 +14,7 @@ public class InventoryRepository :  IGenericRepository<Inventory>
     public async Task<List<Inventory>> GetAllAsync()
     {
         return await _dbContext.Inventories
+            .Where(i => EF.Property<string>(i, "Discriminator") == "Inventory")
             .Include(i => i.CommentInfo)
             .ToListAsync();    
     }
@@ -49,4 +50,10 @@ public class InventoryRepository :  IGenericRepository<Inventory>
 
         return entity;
     }
+    
+    public async Task SaveChangesAsync()
+    {
+        await _dbContext.SaveChangesAsync();
+    }
+
 }

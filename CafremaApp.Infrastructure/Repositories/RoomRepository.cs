@@ -2,7 +2,7 @@ using CafremaApp.Core.Entities;
 using CafremaApp.Core.Interfaces;
 using CafremaApp.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-
+//15,5
 namespace CafremaApp.Infrastructure.Repositories;
 
 public class RoomRepository : IGenericRepository<Room>
@@ -51,5 +51,10 @@ public class RoomRepository : IGenericRepository<Room>
         await _dbContext.SaveChangesAsync();
 
         return entity;
+    }
+    
+    public async Task SaveChangesAsync()
+    {
+        await _dbContext.SaveChangesAsync();
     }
 }
