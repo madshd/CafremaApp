@@ -2,6 +2,8 @@
 using CafremaApp.Application.DTOs;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.Interfaces;
+using Microsoft.AspNetCore.JsonPatch;
+
 namespace CafremaApp.Application.Services;
 
 public class InventoryService : IInventoryService
@@ -48,5 +50,20 @@ public class InventoryService : IInventoryService
             return null;
 
         return _mapper.Map<InventoryDTO>(deletedEntity);
+    }
+
+    public async Task<bool> PatchInventory(Guid id, JsonPatchDocument<InventoryDTO> patchDoc)
+    {
+        var inventory = await _repository.GetByIdAsync(id);
+        if (inventory == null) return false;
+
+        var dto = _mapper.Map<InventoryDTO>(inventory);
+        
+        patchDoc.ApplyTo(dto);
+
+        _mapper.Map<Inventory>(dto);
+
+        await _repository.SaveChangesAsync();
+        return true;
     }
 }
