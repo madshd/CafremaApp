@@ -52,4 +52,9 @@ public class ApplianceRepository :  IGenericRepository<Appliance>
 
         return entity;
     }
+
+    public async Task SaveChangesAsync()
+    {
+        await _dbContext.SaveChangesAsync();
+    }
 }
