@@ -11,7 +11,12 @@ public class Inventory
     public Condition Condition { get; set; }
     public bool NeedsRepair { get; set; }
     public CommentInfo? CommentInfo { get; set; }
-    
+    public Guid? RoomId { get; set; }
+    public Room? Room { get; set; }
+    public Inventory()
+    {
+    }
+
     public Inventory(string type, Condition condition)
     {
         if (type == null)

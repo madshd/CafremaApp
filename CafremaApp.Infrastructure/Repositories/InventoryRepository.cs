@@ -15,7 +15,8 @@ public class InventoryRepository :  IGenericRepository<Inventory>
     {
         return await _dbContext.Inventories
             .Include(i => i.CommentInfo)
-            .ToListAsync();    }
+            .ToListAsync();    
+    }
 
     public async Task<Inventory?> GetByIdAsync(Guid id)
     {
@@ -36,10 +37,16 @@ public class InventoryRepository :  IGenericRepository<Inventory>
         return entity;
     }
 
-    public async Task<Inventory> DeleteAsync(Inventory inventory)
+    public async Task<Inventory?> DeleteAsync(Guid id)
     {
-        _dbContext.Inventories.Remove(inventory);
+        var entity = await _dbContext.Inventories.FindAsync(id);
+
+        if (entity == null)
+            return null; 
+
+        _dbContext.Inventories.Remove(entity);
         await _dbContext.SaveChangesAsync();
-        return inventory;
+
+        return entity;
     }
 }

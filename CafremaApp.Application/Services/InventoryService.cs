@@ -2,7 +2,6 @@
 using CafremaApp.Application.DTOs;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.Interfaces;
-
 namespace CafremaApp.Application.Services;
 
 public class InventoryService : IInventoryService
@@ -41,10 +40,13 @@ public class InventoryService : IInventoryService
         return _mapper.Map<InventoryDTO>(updatedEntity);
     }
 
-    public async Task<InventoryDTO> DeleteInventoryItem(InventoryDTO inventory)
+    public async Task<InventoryDTO?> DeleteInventoryItem(Guid id)
     {
-        
-        var deletedEntity = await _repository.DeleteAsync(_mapper.Map<Inventory>(inventory));
+        var deletedEntity = await _repository.DeleteAsync(id);
+
+        if (deletedEntity == null)
+            return null;
+
         return _mapper.Map<InventoryDTO>(deletedEntity);
     }
 }
