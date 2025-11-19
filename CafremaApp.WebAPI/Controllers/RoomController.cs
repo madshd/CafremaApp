@@ -1,5 +1,6 @@
 using AutoMapper;
 using CafremaApp.Application.DTOs.Room;
+using CafremaApp.Application.Interfaces;
 using CafremaApp.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -38,8 +39,12 @@ public class RoomController : ControllerBase
     [Route("DeleteRoom")]
     public async Task<IActionResult> DeleteRoom(Guid id)
     {
-        var room = await _roomService.GetRoom(id);
-        return room == null ? NotFound() : Ok(await _roomService.DeleteRoom(room));
+        var deleted = await _roomService.DeleteRoom(id);
+
+        if (deleted == null)
+            return NotFound();
+
+        return Ok(deleted);
     }
 
     [HttpPost]

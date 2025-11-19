@@ -22,6 +22,8 @@ public static class DependencyInjection
         services.AddSingleton(new SupabaseClientWrapper(url!, key!));
         
         services.AddScoped<IGenericRepository<Inventory>, InventoryRepository>();
+        services.AddScoped<IGenericRepository<Appliance>, ApplianceRepository>();
+        services.AddScoped<IGenericRepository<Room>, RoomRepository>();
         
         return services;
     }

@@ -3,6 +3,7 @@ using System;
 using CafremaApp.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CafremaApp.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20251117205201_RoomAdded")]
+    partial class RoomAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,16 +45,11 @@ namespace CafremaApp.Infrastructure.Migrations
                     b.Property<bool>("NeedsRepair")
                         .HasColumnType("boolean");
 
-                    b.Property<Guid?>("RoomId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RoomId");
 
                     b.ToTable("Inventories");
 
@@ -114,15 +112,6 @@ namespace CafremaApp.Infrastructure.Migrations
                     b.HasDiscriminator().HasValue("Appliance");
                 });
 
-            modelBuilder.Entity("CafremaApp.Core.Entities.Inventory", b =>
-                {
-                    b.HasOne("CafremaApp.Core.Entities.Room", "Room")
-                        .WithMany("Inventory")
-                        .HasForeignKey("RoomId");
-
-                    b.Navigation("Room");
-                });
-
             modelBuilder.Entity("CafremaApp.Core.ValueObjects.CommentInfo", b =>
                 {
                     b.HasOne("CafremaApp.Core.Entities.Inventory", "Inventory")
@@ -137,11 +126,6 @@ namespace CafremaApp.Infrastructure.Migrations
             modelBuilder.Entity("CafremaApp.Core.Entities.Inventory", b =>
                 {
                     b.Navigation("CommentInfo");
-                });
-
-            modelBuilder.Entity("CafremaApp.Core.Entities.Room", b =>
-                {
-                    b.Navigation("Inventory");
                 });
 #pragma warning restore 612, 618
         }

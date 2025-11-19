@@ -1,6 +1,6 @@
 using CafremaApp.Application.DTOs.Appliance;
 
-namespace CafremaApp.Core.Interfaces;
+namespace CafremaApp.Application.Interfaces;
 
 public interface IApplianceService
 {
@@ -9,6 +9,6 @@ public interface IApplianceService
     Task<ApplianceDTO?> GetApplianceItem(Guid id);
     Task CreateApplianceItem(CreateApplianceDTO appliance);
     Task<ApplianceDTO>  UpdateApplianceItem(ApplianceDTO appliance);
-    Task<ApplianceDTO>  DeleteApplianceItem(ApplianceDTO appliance);
+    Task<ApplianceDTO>  DeleteApplianceItem(Guid id);
     
 }

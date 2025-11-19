@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CafremaApp.Application.DTOs;
 using CafremaApp.Application.DTOs.Appliance;
+using CafremaApp.Application.Interfaces;
 using CafremaApp.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using CafremaApp.Core.Entities;
@@ -42,9 +43,12 @@ namespace CafremaApp.WebAPI.Controllers
         [Route("DeleteAppliance")]
         public async Task<IActionResult> DeleteAppliance(Guid id)
         {
-            
-            var appliance = await _applianceService.GetApplianceItem(id);
-            return appliance == null ? NotFound() : Ok(await _applianceService.DeleteApplianceItem(appliance));
+            var deleted = await _applianceService.DeleteApplianceItem(id);
+
+            if (deleted == null)
+                return NotFound();
+
+            return Ok(deleted);
         }
         
         [HttpPost]

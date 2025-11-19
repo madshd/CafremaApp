@@ -16,7 +16,6 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
-builder.Services.AddControllers().AddNewtonsoftJson();
 
 var app = builder.Build();
 
