@@ -1,26 +1,14 @@
 using CafremaApp.Core.Enums;
 using CafremaApp.Core.ValueObjects;
 
-namespace CafremaApp.Application.DTOs;
+namespace CafremaApp.Application.DTOs.CommentInfo;
 
-public class InventoryDTO
+public record class InventoryDTO
 {
-    
-    public Guid Id { get; set; }
-    public string Type { get; set; }
-    public DateOnly InstallationDate { get; set; }
-    public Condition Condition { get; set; }
-    public bool NeedsRepair { get; set; }
-    public CommentInfoDTO? CommentInfo { get; set; }
-    //public Guid? CommentInfoId { get; set; }
-
-    public InventoryDTO() { }
-
-    public InventoryDTO(string type, Condition condition)
-    {
-        Type = type;
-        Condition = condition;
-        NeedsRepair = false;
-    }
-    
+    public Guid Id { get; init; }
+    public string Type { get; init; } = string.Empty;
+    public DateOnly InstallationDate { get; init; }
+    public Condition Condition { get; init; } = default!;
+    public bool NeedsRepair { get; init; }
+    public CommentInfoDTO? CommentInfo { get; init; }
 }

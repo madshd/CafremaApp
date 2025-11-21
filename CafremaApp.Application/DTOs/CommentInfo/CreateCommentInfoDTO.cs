@@ -1,7 +1,7 @@
-namespace CafremaApp.Application.DTOs;
+namespace CafremaApp.Application.DTOs.CommentInfo;
 
-public class CreateCommentInfoDTO
+public record CreateCommentInfoDTO
 {
-    public string Text { get; set; }
-    public DateTime LastEdited { get; set; }
+    public string Text { get; init; } = string.Empty;
+    public DateTime LastEdited { get; init; }
 }

@@ -1,12 +1,10 @@
+using CafremaApp.Application.DTOs.CommentInfo;
 
-using CafremaApp.Application.DTOs;
-using CafremaApp.Application.DTOs.Appliance;
-
-public class RoomDTO
+public record class RoomDTO
 {
-    public Guid Id { get; set; }
-    public string Title { get; set; }
-    public List<InventoryDTO> inventory = new List<InventoryDTO>();
-    public List<ApplianceDTO> appliances = new List<ApplianceDTO>();
-}
+    public Guid Id { get; init; }
+    public string Title { get; init; } = string.Empty;
 
+    public List<InventoryDTO> Inventory { get; init; } = new();
+    public List<ApplianceDTO> Appliances { get; init; } = new();
+}
