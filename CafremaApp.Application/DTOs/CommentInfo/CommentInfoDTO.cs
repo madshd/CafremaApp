@@ -1,9 +1,9 @@
-namespace CafremaApp.Application.DTOs;
+namespace CafremaApp.Application.DTOs.CommentInfo;
 
-public class CommentInfoDTO
+public record CommentInfoDTO
 {
-    public Guid Id { get; set; }
-    public string Text { get; set; }
-    public DateTime LastEdited { get; set; }
-    public Guid InventoryId { get; set; }
+    public Guid Id { get; init; }
+    public string Text { get; init; } = string.Empty;
+    public DateTime LastEdited { get; init; }
+    public Guid InventoryId { get; init; }
 }
