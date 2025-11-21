@@ -42,22 +42,14 @@ public class Appliance : Inventory
     public Appliance(string type, Condition condition, 
         string manufacturer, string model) : base(type, condition)
     {
-        if (manufacturer == null)
-        {
-            throw new ArgumentNullException(nameof(manufacturer));
-        }
-        
+        ArgumentNullException.ThrowIfNull(manufacturer);
         if (string.IsNullOrWhiteSpace(manufacturer))
         {
             throw new ArgumentException(
                 "Manufacturer must not be empty.", nameof(manufacturer));
         }
 
-        if (model == null)
-        {
-            throw new ArgumentNullException(nameof(model));
-        }
-        
+        ArgumentNullException.ThrowIfNull(model);
         if (string.IsNullOrWhiteSpace(model))
         {
             throw new ArgumentException(
