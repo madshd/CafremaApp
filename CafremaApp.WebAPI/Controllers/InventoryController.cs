@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Azure;
 using CafremaApp.Application.DTOs;
+using CafremaApp.Application.DTOs.Inventory;
+using CafremaApp.Application.Interfaces;
 using CafremaApp.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using CafremaApp.Core.Entities;
@@ -51,7 +53,7 @@ namespace CafremaApp.WebAPI.Controllers
         
         [HttpPost]
         [Route("CreateInventory")]
-        public async Task<IActionResult> CreateInventory([FromBody] CreateInventoryDTO inventory)
+        public async Task<IActionResult> CreateInventory([FromBody] CreateInventoryDto inventory)
         {
             await _inventoryService.CreateInventoryItem(inventory);
             return Ok();
@@ -79,7 +81,7 @@ namespace CafremaApp.WebAPI.Controllers
 
         [HttpPut]
         [Route("UpdateInventory")]
-        public async Task<IActionResult> UpdateInventory([FromBody] InventoryDTO inventory)
+        public async Task<IActionResult> UpdateInventory([FromBody] InventoryDto inventory)
         {
             await _inventoryService.UpdateInventoryItem(inventory);
             return Ok();

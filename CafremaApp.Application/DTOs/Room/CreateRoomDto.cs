@@ -1,6 +1,6 @@
 namespace CafremaApp.Application.DTOs.CommentInfo.Room;
 
-public record CreateRoomDTO
+public record CreateRoomDto
 {
     public string Title { get; init; } =  string.Empty;
 }

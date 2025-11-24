@@ -1,4 +1,5 @@
 using AutoMapper;
+using CafremaApp.Application.DTOs.CommentInfo.Room;
 using CafremaApp.Application.DTOs.Room;
 using CafremaApp.Application.Interfaces;
 using CafremaApp.Core.Interfaces;
@@ -49,7 +50,7 @@ public class RoomController : ControllerBase
 
     [HttpPost]
     [Route("CreateRoom")]
-    public async Task<IActionResult> CreateRoom([FromBody] CreateRoomDTO room)
+    public async Task<IActionResult> CreateRoom([FromBody] CreateRoomDto room)
     {
         await _roomService.CreateRoom(room);
         return Ok();

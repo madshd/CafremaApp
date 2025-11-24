@@ -1,9 +1,9 @@
 using CafremaApp.Application.DTOs.CommentInfo;
-using CafremaApp.Core.Enums;
+using CafremaApp.Application.DTOs.Inventory;
 
-namespace CafremaApp.Application.DTOs.CommentInfo;
+namespace CafremaApp.Application.DTOs.Appliance;
 
-public record class CreateApplianceDTO : CreateInventoryDTO
+public record ApplianceDto : InventoryDto
 {
     public string Manufacturer { get; init; } = string.Empty;
     public string Model { get; init; } = string.Empty;
