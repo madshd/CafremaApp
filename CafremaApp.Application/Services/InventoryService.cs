@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using CafremaApp.Application.DTOs;
+using CafremaApp.Application.DTOs.Inventory;
+using CafremaApp.Application.Interfaces;
 using CafremaApp.Core.Entities;
 using CafremaApp.Core.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
@@ -17,47 +19,47 @@ public class InventoryService : IInventoryService
         _mapper = mapper;
     }
 
-    public async Task<List<InventoryDTO>> GetAllInventory()
+    public async Task<List<InventoryDto>> GetAllInventory()
     {
         var list = await _repository.GetAllAsync();
-        var dtoList = _mapper.Map<List<InventoryDTO>>(list);
+        var dtoList = _mapper.Map<List<InventoryDto>>(list);
         return dtoList;
     }
 
-    public async Task<InventoryDTO?> GetInventoryItem(Guid id)
+    public async Task<InventoryDto?> GetInventoryItem(Guid id)
     {
         var entity = await _repository.GetByIdAsync(id);
-        return _mapper.Map<InventoryDTO>(entity);
+        return _mapper.Map<InventoryDto>(entity);
     }
 
 
-    public async Task CreateInventoryItem(CreateInventoryDTO inventory)
+    public async Task CreateInventoryItem(CreateInventoryDto inventory)
     {
         await _repository.CreateAsync(_mapper.Map<Inventory>(inventory));
     }
 
-    public async Task<InventoryDTO> UpdateInventoryItem(InventoryDTO inventory)
+    public async Task<InventoryDto> UpdateInventoryItem(InventoryDto inventory)
     {
         var updatedEntity = await _repository.UpdateAsync(_mapper.Map<Inventory>(inventory));
-        return _mapper.Map<InventoryDTO>(updatedEntity);
+        return _mapper.Map<InventoryDto>(updatedEntity);
     }
 
-    public async Task<InventoryDTO?> DeleteInventoryItem(Guid id)
+    public async Task<InventoryDto?> DeleteInventoryItem(Guid id)
     {
         var deletedEntity = await _repository.DeleteAsync(id);
 
         if (deletedEntity == null)
             return null;
 
-        return _mapper.Map<InventoryDTO>(deletedEntity);
+        return _mapper.Map<InventoryDto>(deletedEntity);
     }
 
-    public async Task<bool> PatchInventory(Guid id, JsonPatchDocument<InventoryDTO> patchDoc)
+    public async Task<bool> PatchInventory(Guid id, JsonPatchDocument<InventoryDto> patchDoc)
     {
         var inventory = await _repository.GetByIdAsync(id);
         if (inventory == null) return false;
 
-        var dto = _mapper.Map<InventoryDTO>(inventory);
+        var dto = _mapper.Map<InventoryDto>(inventory);
         
         patchDoc.ApplyTo(dto);
 

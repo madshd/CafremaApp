@@ -5,10 +5,10 @@ namespace CafremaApp.Application.Interfaces;
 public interface IApplianceService
 {
     //Diverse usecases beskrives herunder
-    Task<List<ApplianceDTO>> GetAllAppliances();
-    Task<ApplianceDTO?> GetApplianceItem(Guid id);
-    Task CreateApplianceItem(CreateApplianceDTO appliance);
-    Task<ApplianceDTO>  UpdateApplianceItem(ApplianceDTO appliance);
-    Task<ApplianceDTO>  DeleteApplianceItem(Guid id);
+    Task<List<ApplianceDto>> GetAllAppliances();
+    Task<ApplianceDto?> GetApplianceItem(Guid id);
+    Task CreateApplianceItem(CreateApplianceDto appliance);
+    Task<ApplianceDto>  UpdateApplianceItem(ApplianceDto appliance);
+    Task<ApplianceDto>  DeleteApplianceItem(Guid id);
     
 }

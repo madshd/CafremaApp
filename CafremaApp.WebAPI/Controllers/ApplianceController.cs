@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using CafremaApp.Application.DTOs;
 using CafremaApp.Application.DTOs.Appliance;
 using CafremaApp.Application.Interfaces;
 using CafremaApp.Application.Services;
@@ -53,7 +52,7 @@ namespace CafremaApp.WebAPI.Controllers
         
         [HttpPost]
         [Route("CreateAppliance")]
-        public async Task<IActionResult> CreateAppliance([FromBody] CreateApplianceDTO appliance)
+        public async Task<IActionResult> CreateAppliance([FromBody] CreateApplianceDto appliance)
         {
             await _applianceService.CreateApplianceItem(appliance);
             return Ok();
@@ -61,7 +60,7 @@ namespace CafremaApp.WebAPI.Controllers
 
         [HttpPut]
         [Route("UpdateAppliance")]
-        public async Task<IActionResult> UpdateAppliance([FromBody] ApplianceDTO appliance)
+        public async Task<IActionResult> UpdateAppliance([FromBody] ApplianceDto appliance)
         {
             await _applianceService.UpdateApplianceItem(appliance);
             return Ok();
