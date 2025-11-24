@@ -1,5 +1,5 @@
 ﻿using CafremaApp.Application.DTOs.Inventory;
-using Microsoft.AspNetCore.JsonPatch;
+// using Microsoft.AspNetCore.JsonPatch;
 
 namespace CafremaApp.Application.Interfaces;
 
@@ -12,5 +12,5 @@ public interface IInventoryService
     Task<InventoryDto>  UpdateInventoryItem(InventoryDto inventory);
     Task<InventoryDto?>  DeleteInventoryItem(Guid id);
 
-    Task<bool> PatchInventory(Guid id, JsonPatchDocument<InventoryDto> patchDoc);
+    // Task<bool> PatchInventory(Guid id, JsonPatchDocument<InventoryDto> patchDoc);
 }
