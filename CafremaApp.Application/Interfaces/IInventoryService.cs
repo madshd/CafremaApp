@@ -1,14 +1,15 @@
-﻿using CafremaApp.Application.DTOs;
-using CafremaApp.Core.Entities;
+﻿using CafremaApp.Application.DTOs.Inventory;
 
-namespace CafremaApp.Core.Interfaces;
+namespace CafremaApp.Application.Interfaces;
 
 public interface IInventoryService
 {
     //Diverse usecases beskrives herunder
-    Task<List<InventoryDTO>> GetAllInventory();
-    Task<InventoryDTO?> GetInventoryItem(Guid id);
-    Task CreateInventoryItem(CreateInventoryDTO inventory);
-    Task<InventoryDTO>  UpdateInventoryItem(InventoryDTO inventory);
-    Task<InventoryDTO?>  DeleteInventoryItem(Guid id);
+    Task<List<InventoryDto>> GetAllInventory();
+    Task<InventoryDto?> GetInventoryItem(Guid id);
+    Task CreateInventoryItem(CreateInventoryDto inventory);
+    Task<InventoryDto>  UpdateInventoryItem(InventoryDto inventory);
+    Task<InventoryDto?>  DeleteInventoryItem(Guid id);
+
+    //Task<bool> PatchInventory(Guid id, JsonPatchDocument<InventoryDto> patchDoc);
 }
